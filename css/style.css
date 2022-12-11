@@ -41,15 +41,9 @@ select {
 }
 
 .time {
-  font-size: 44px;
-  font-weight: bold;
+  font-size: 40px;
 }
 
-.time .pm {
-  font-size: 18px;
-  font-weight: normal;
-  vertical-align: middle;
-}
 footer {
   text-align: center;
   margin: 10px;

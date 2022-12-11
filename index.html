@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
 </head>
 
@@ -26,13 +29,13 @@
                 <h2>
                     Seoul
                 </h2>
-                <div class="date">
-                    December 10th 2022
+                <div class="date" id="seoul-date">
+
                 </div>
             </div>
 
-            <div class="time">
-                12:34 <span class="pm">pm</span>
+            <div class="time" id="seoul-time">
+                <span class="pm">pm</span>
 
             </div>
         </div>
@@ -41,13 +44,13 @@
                 <h2>
                     Paris
                 </h2>
-                <div class="date">
-                    December 10th 2022
+                <div class="date" id="paris-date">
+
                 </div>
             </div>
 
-            <div class="time">
-                12:34 <span class="pm">pm</span>
+            <div class="time" id="paris-time">
+                <span class="pm">pm</span>
 
             </div>
         </div>
@@ -56,13 +59,13 @@
                 <h2>
                     Sydney
                 </h2>
-                <div class="date">
-                    December 10th 2022
+                <div class="date" id="sydney-date">
+
                 </div>
             </div>
 
-            <div class="time">
-                12:34 <span class="pm">pm</span>
+            <div class="time" id="sydney-time">
+                <span class="pm">pm</span>
 
             </div>
         </div>
