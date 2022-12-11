@@ -26,4 +26,30 @@ function formattedTime() {
     .tz("Australia/Sydney")
     .format("dddd, Do MMMM YYYY");
 }
+
+function showSelectedCity(event) {
+  let cityTimezone = event.target.value;
+  let cityName = cityTimezone.replace("_", "").split("/")[1];
+  let cityTime = moment().tz(cityTimezone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `<div class="city">
+                <div>
+                    <h2>
+                       ${cityName}
+                    </h2>
+                    <div class="date">
+${cityTime.format("dddd, Do MMMM YYYY")}
+                    </div>
+                </div>
+
+                <div class="time">
+<strong>${cityTime.format("hh:mm:ss")}</strong> 
+<small>${cityTime.format("A")}</small>
+                </div>
+            </div>`;
+}
+
 setInterval(formattedTime, 1000);
+
+let selectedCities = document.querySelector("#city");
+selectedCities.addEventListener("change", showSelectedCity);
