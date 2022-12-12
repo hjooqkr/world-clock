@@ -17,13 +17,13 @@ function formattedTime() {
     .tz("Europe/Paris")
     .format("dddd, Do MMMM YYYY");
 
-  let timeElementSydney = document.querySelector("#sydney-time");
-  let dateElementSydney = document.querySelector("#sydney-date");
-  timeElementSydney.innerHTML = moment()
-    .tz("Australia/Sydney")
+  let timeElementNy = document.querySelector("#newyork-time");
+  let dateElementNy = document.querySelector("#newyork-date");
+  timeElementNy.innerHTML = moment()
+    .tz("America/New York")
     .format("[<strong>]hh:mm:ss[</strong>] [<small>]A[</small>]");
-  dateElementSydney.innerHTML = moment()
-    .tz("Australia/Sydney")
+  dateElementNy.innerHTML = moment()
+    .tz("America/New York")
     .format("dddd, Do MMMM YYYY");
 }
 
